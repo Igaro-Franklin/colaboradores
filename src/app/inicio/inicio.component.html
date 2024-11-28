@@ -1,18 +1,64 @@
 <div class="container">
     <h4>Lembretes:</h4>
-    <div>
-        <form (ngSubmit) = "adicionarLembrete()">
-            <input 
-            type="text" 
-            [(ngModel)]="novoLembrete" 
-            name="item" 
-            placeholder="Digite um item"
-            required />
-          <button type="submit">Salvar</button>
+    <div class="mb-4">
+        <form>
+            <input class="form-control mb-2" type="text" name="item" placeholder="Digite um lembrete" required />
+            <input class="form-control mb-2" type="date" name="data" id="dataLembrete">
+            <button type="submit" type="button" class="btn btn-primary">Salvar</button>
         </form>
     </div>
 
-    <ul>
-        <li *ngFor="let lembrete of lembrentes">{{ lembrete }}</li>
-    </ul>
+    <div>
+        <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Data</th>
+                <th>Lembrete</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>01/12/2024</td>
+                <td>Entrevista com o candidato João da Silva</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Editar</button>
+                  <button class="btn btn-success btn-sm ms-1">Concluir</button>
+                </td>
+              </tr>
+              <tr>
+                <td>06/12/2024</td>
+                <td>Revisar relatórios de desempenho da equipe</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Editar</button>
+                  <button class="btn btn-success btn-sm ms-1">Concluir</button>
+                </td>
+              </tr>
+              <tr>
+                <td>15/12/2024</td>
+                <td>Reunião de feedback com Maria Oliveira</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Editar</button>
+                  <button class="btn btn-success btn-sm ms-1">Concluir</button>
+                </td>
+              </tr>
+              <tr>
+                <td>16/12/2024</td>
+                <td>Planejamento de treinamento para novos funcionários</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Editar</button>
+                  <button class="btn btn-success btn-sm ms-1">Concluir</button>
+                </td>
+              </tr>
+              <tr>
+                <td>17/12/2024</td>
+                <td>Avaliar propostas de promoção para a equipe</td>
+                <td>
+                  <button class="btn btn-primary btn-sm">Editar</button>
+                  <button class="btn btn-success btn-sm ms-1">Concluir</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
 </div>
