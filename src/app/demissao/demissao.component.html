@@ -1,1 +1,74 @@
-<p>demissao works!</p>
+<div class="container">
+    <h4>Demissão de colaborador</h4>
+
+    <form class="mb-4">
+        <div>
+            <label class="form-label">Selecione o colaborador:</label>
+            <select id="nomesColaboradores" class="form-select">
+                <option value="" selected disabled>Selecione um colaborador</option>
+                <option value="Ana Clara Mendes">Ana Clara Mendes</option>
+                <option value="Beatriz Rocha">Beatriz Rocha</option>
+                <option value="Bruno Ribeiro">Bruno Ribeiro</option>
+                <option value="Camila Nogueira">Camila Nogueira</option>
+                <option value="Carlos Souza">Carlos Souza</option>
+                <option value="Felipe Lima">Felipe Lima</option>
+                <option value="Gabriel Santos">Gabriel Santos</option>
+                <option value="João da Silva">João da Silva</option>
+                <option value="Juliana Pereira">Juliana Pereira</option>
+                <option value="Larissa Martins">Larissa Martins</option>
+                <option value="Maria Oliveira">Maria Oliveira</option>
+                <option value="Patrícia Costa">Patrícia Costa</option>
+                <option value="Renato Almeida">Renato Almeida</option>
+                <option value="Ricardo Teixeira">Ricardo Teixeira</option>
+                <option value="Sofia Fernandes">Sofia Fernandes</option>
+                <option value="Thiago Moura">Thiago Moura</option>
+              </select>
+        </div>
+        <div>
+            <label class="form-label">Data de demissão:</label>
+            <input class="form-control mb-2" type="date" name="data">
+        </div>
+        <div>
+            <label class="form-label">Processo:</label>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label mb-1">Demissão</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label mb-1">Aviso Prévio</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label mb-1">Justa Causa</label>
+            </div>
+        </div>
+        <div>
+            <div class="form-floating">
+                <textarea class="form-control" placeholder="Alguma observação?" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Observação</label>
+            </div>
+        </div>
+
+    </form>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Confirmar
+    </button>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tem certeza?</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">Confirmar a demição do(a) "nomeFuncionario"</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn btn-primary">Salvar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>

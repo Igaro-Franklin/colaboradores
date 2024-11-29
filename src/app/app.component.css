@@ -1,0 +1,6 @@
+form{
+    width: 800px;
+    height: 65vh;
+    display: block;
+    overflow-y: auto;
+}
