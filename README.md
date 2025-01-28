@@ -1,27 +1,57 @@
-# Colaboradores
+# Projeto Colaboradores
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+![Colaboradores](public/colaboradores.png)
 
-## Development server
+## Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Este é um projeto Angular para gerenciar colaboradores, incluindo funcionalidades como cadastro, edição, demissão e gerenciamento de férias.
 
-## Code scaffolding
+## Estrutura do Projeto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Menu**: Navegação entre as diferentes seções do aplicativo.
+- **Início**: Página inicial com lembretes.
+- **Colaboradores**: Listagem e edição de colaboradores.
+- **Cadastro**: Formulário para cadastrar novos colaboradores.
+- **Férias**: Gerenciamento de férias dos colaboradores.
+- **Demissão**: Processo de demissão de colaboradores.
 
-## Build
+## Tecnologias Utilizadas
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Angular
+- Bootstrap
 
-## Running unit tests
+## Como Executar
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+1. Clone o repositório.
+2. Instale as dependências com `npm install`.
+3. Execute o projeto com `npm start`.
 
-## Running end-to-end tests
+## Scripts Disponíveis
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- `ng`: Executa o Angular CLI.
+- `start`: Inicia o servidor de desenvolvimento.
+- `build`: Compila o projeto.
+- `watch`: Compila o projeto em modo de observação.
+- `test`: Executa os testes.
+- `serve:ssr:colaboradores`: Inicia o servidor SSR.
 
-## Further help
+## Estrutura de Pastas
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- `src/app`: Contém os componentes do Angular.
+- `public`: Contém arquivos públicos, como imagens.
+
+## Dependências
+
+- Angular
+- Bootstrap
+- Express
+- RxJS
+- Zone.js
+
+## Contribuição
+
+Sinta-se à vontade para contribuir com o projeto. Faça um fork e envie um pull request com suas melhorias.
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT.
